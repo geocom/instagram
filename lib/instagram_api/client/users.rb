@@ -47,7 +47,8 @@ module Instagram
       # @example
       #   client.feed
       def feed
-        get '/users/self/feed', auth_params
+        puts "User's feed endpoint has been deprecated from Instagrams API using recent instead"
+        return self.recent
       end
 
       # Get the most recent media published by a user.
